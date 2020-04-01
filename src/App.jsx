@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import Description from './components/Description';
 import Features from './components/Features';
+import Details from './components/Details';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Description />
       <Features />
+      <Details />
     </>
   );
 }
