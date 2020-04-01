@@ -1,8 +1,13 @@
 import React from 'react';
 
+import Header from './components/Header';
+
 function App() {
-  // return <div>Under construction!</div>;
-  return;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
