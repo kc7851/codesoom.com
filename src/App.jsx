@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Description from './components/Description';
 import Features from './components/Features';
 import Details from './components/Details';
+import Video from './components/Video';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Description />
       <Features />
       <Details />
+      <Video />
     </>
   );
 }
