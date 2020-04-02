@@ -1,22 +1,29 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 
-import Header from './components/Header';
-import Description from './components/Description';
-import Features from './components/Features';
-import Details from './components/Details';
-import Video from './components/Video';
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import Course from './pages/Course';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Description />
-      <Features />
-      <Details />
-      <Video />
+    <Router>
+      <Nav />
+        <Switch>
+          <Route path="/course">
+            <Course />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       <Footer />
-    </>
+    </Router>
   );
 }
 
