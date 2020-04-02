@@ -14,14 +14,14 @@ function App() {
   return (
     <Router>
       <Nav />
-        <Switch>
-          <Route path="/course">
-            <Course />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+      <Switch>
+        <Route path="/course">
+          <Course />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
       <Footer />
     </Router>
   );
