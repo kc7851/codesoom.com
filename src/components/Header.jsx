@@ -1,12 +1,10 @@
 import React from 'react';
 
-import Nav from './Nav';
 import HeaderFrame from './HeaderFrame';
 
 function Header() {
   return (
     <>
-      <Nav />
       <header id="header" className="header">
         <div className="header-content">
           <div className="container">
