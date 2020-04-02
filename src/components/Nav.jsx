@@ -7,11 +7,18 @@ function Nav() {
       <div className="container">
 
         <Link className="navbar-brand logo-text page-scroll" to="/">CodeSoom</Link>
-        
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-awesome fas fa-bars"></span>
-          <span className="navbar-toggler-awesome fas fa-times"></span>
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-awesome fas fa-bars" />
+          <span className="navbar-toggler-awesome fas fa-times" />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarsExampleDefault">
