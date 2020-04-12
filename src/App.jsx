@@ -1,29 +1,26 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
 
-import Nav from './components/Nav';
-import Home from './pages/Home';
-import Course from './pages/Course';
-import Footer from './components/Footer';
+import Reset from './components/Reset';
+import Wadiz from './pages/Wadiz';
 
 function App() {
   return (
-    <Router>
-      <Nav />
-      <Switch>
-        <Route path="/course">
-          <Course />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
+    <>
+      <Reset />
+      <Wadiz />
+      {/* <Router>
+        <Nav />
+        <Switch>
+          <Route path="/course">
+            <Course />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router> */}
+    </>
   );
 }
 
