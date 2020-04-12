@@ -25,6 +25,7 @@ module.exports = {
     'node_modules/',
     'src/images',
     'src/css',
+    'src/assets',
   ],
   rules: {
     "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}],
