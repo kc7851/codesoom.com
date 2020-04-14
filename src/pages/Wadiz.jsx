@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import background from '../images/landing-bg.jpg';
 
 const mobile = '@media (max-width: 576px)';
 
 const styles = {
+  chat: {
+    position: 'fixed',
+    right: '32px',
+    bottom: '32px',
+    zIndex: 2,
+  },
   container: {
     backgroundImage: `url(${background})`,
     backgroundSize: 'cover',
@@ -73,6 +79,27 @@ const styles = {
   },
 };
 export default function Lading() {
+  const apply = () => {
+    alert('4월 17일에 오픈 예정입니다. 궁금하신 점은 카카오톡 채널을 통해 문의해 주세요.');
+  };
+
+  useEffect(() => {
+    window.kakaoAsyncInit = function () {
+      window.Kakao.Channel.createChatButton({
+        container: '#kakao-talk-channel-add-button',
+      });
+    };
+
+    (function (d, s, id) {
+      const fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      const js = d.createElement(s);
+      js.id = id;
+      js.src = '//developers.kakao.com/sdk/js/kakao.plusfriend.min.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'kakao-js-sdk'));
+  }, []);
+
   return (
     <>
       <div css={styles.container}>
@@ -90,8 +117,19 @@ export default function Lading() {
           </strong>
         </div>
 
-        <button css={styles.apply} type="button">신청하기</button>
+        {/* TODO Connect to https://www.wadiz.kr/web/campaign/detail/63768 */}
+        <button css={styles.apply} type="button" onClick={apply}>
+          신청하기
+        </button>
       </div>
+
+      <div
+        css={styles.chat}
+        id="kakao-talk-channel-add-button"
+        data-channel-public-id="_xlgxiBxb"
+        data-size="small"
+        data-support-multiple-densities="true"
+      />
     </>
   );
 }
