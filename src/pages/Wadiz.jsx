@@ -113,7 +113,7 @@ export default function Lading() {
           <strong>
             소프트웨어 개발의 지혜
             <br />
-            리액트편
+            리액트 편
           </strong>
         </div>
 
