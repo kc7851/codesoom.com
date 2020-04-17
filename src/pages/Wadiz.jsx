@@ -80,7 +80,7 @@ const styles = {
 };
 export default function Lading() {
   const apply = () => {
-    alert('4월 17일에 오픈 예정입니다. 궁금하신 점은 카카오톡 채널을 통해 문의해 주세요.');
+    alert('오픈 준비 중입니다. 카카오톡 채널로 문의를 남겨주시면 오픈 시 연락드리겠습니다 :)');
   };
 
   useEffect(() => {
