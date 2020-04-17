@@ -837,7 +837,7 @@ input[type='checkbox'] {
 	height: 2.25rem;
 }
 
-.cls-1 {
+.cls {
 	fill: #5f4def;
 }
 
@@ -1690,9 +1690,6 @@ a:hover.back-to-top {
 		height: 5rem;
 	}
 
-	.cls-2 {
-		fill: #5f4def;
-	}
 	/* end of footer */
 
 

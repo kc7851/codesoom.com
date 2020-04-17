@@ -26,8 +26,11 @@ module.exports = {
     'src/images',
     'src/css',
     'src/assets',
+    'src/webfonts',
   ],
   rules: {
-    "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}],
+    'react/no-unescaped-entities': ['error', {'forbid': ['>', '}']}],
+    'react/prop-types': 'off',
+    'react/no-array-index-key': 'warn',
   },
 };
