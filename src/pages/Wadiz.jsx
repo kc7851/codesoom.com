@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import background from '../images/landing-bg.jpg';
+const background = 'https://d37fxmvwr7uuev.cloudfront.net/landing-bg.jpg';
 
 const mobile = '@media (max-width: 576px)';
 
