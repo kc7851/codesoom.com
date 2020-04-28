@@ -80,7 +80,7 @@ const styles = {
 };
 export default function Lading() {
   const apply = () => {
-    alert('오픈 준비 중입니다. 카카오톡 채널로 문의를 남겨주시면 오픈 시 연락드리겠습니다 :)');
+    window.open('https://www.wadiz.kr/web/campaign/detail/63768', '_blank');
   };
 
   useEffect(() => {
@@ -117,7 +117,6 @@ export default function Lading() {
           </strong>
         </div>
 
-        {/* TODO Connect to https://www.wadiz.kr/web/campaign/detail/63768 */}
         <button css={styles.apply} type="button" onClick={apply}>
           신청하기
         </button>
