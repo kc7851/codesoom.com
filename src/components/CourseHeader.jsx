@@ -19,7 +19,7 @@ const styles = {
     margin: 'auto',
     color: 'white',
   },
-}
+};
 
 function CourseHeader() {
   return (
