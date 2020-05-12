@@ -3,9 +3,10 @@ import React from 'react';
 const styles = {
   header: {
     backgroundColor: '#5f4dee',
-    padding: '236px 0 186px 0',
+    padding: '166px 0 136px 0',
   },
   title: {
+    textAlign: 'center',
     fontSize: '46px',
     lineHeight: '56px',
   },
@@ -26,13 +27,10 @@ function CourseHeader() {
     <header css={styles.header}>
       <div css={styles.container}>
         <div css={styles.title}>
-          아샬의 리액트 박살내기
-        </div>
-
-        <div css={styles.price}>
-          1,500,000원
+          코딩의 신 아샬의 소프트웨어 개발의 지혜 &lt;리액트 편&gt;
         </div>
       </div>
+
     </header>
   );
 }
