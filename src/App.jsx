@@ -11,6 +11,7 @@ import Wadiz from './pages/Wadiz';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import Course from './pages/Course';
+import LecturePage from './pages/LecturePage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import Footer from './components/Footer';
@@ -30,22 +31,30 @@ function App() {
         : (
           <Router>
             <ScrollToTop />
-            <Nav />
             <Switch>
-              <Route path="/course">
-                <Course />
-              </Route>
-              <Route path="/privacy-policy">
-                <PrivacyPolicy />
-              </Route>
-              <Route path="/terms-conditions">
-                <TermsConditions />
+              <Route path="/courses/:courseId/lectures/:lectureId">
+                <Nav />
+                <LecturePage />
               </Route>
               <Route path="/">
-                <Home />
+                <Nav />
+                <Switch>
+                  <Route exact path="/courses/:id">
+                    <Course />
+                  </Route>
+                  <Route path="/privacy-policy">
+                    <PrivacyPolicy />
+                  </Route>
+                  <Route path="/terms-conditions">
+                    <TermsConditions />
+                  </Route>
+                  <Route path="/">
+                    <Home />
+                  </Route>
+                </Switch>
+                <Footer />
               </Route>
             </Switch>
-            <Footer />
           </Router>
         )}
     </>

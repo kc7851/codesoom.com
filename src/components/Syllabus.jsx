@@ -1,27 +1,24 @@
 import React from 'react';
 
+import ReactMarkdown from 'react-markdown';
+
+import ReactIntro from '../assets/documents/intro-react.md';
+
 const styles = {
-  title: {
-    margin: '0 0 30px 0',
-  },
   container: {
-    '&:not(:first-child)': {
-      marginTop: '52px',
-    },
+    maxWidth: '1024px',
+    padding: '64px 16px',
+    margin: 'auto',
   },
 };
 
 export default function Syllabus() {
   return (
-    <section>
-      <div css={styles.container}>
-        <h3 css={styles.title}>강의 목표</h3>
-        <div />
-      </div>
-
-      <div css={styles.container}>
-        <h3 css={styles.title}>강의 목차</h3>
-      </div>
+    <section css={styles.container}>
+      <ReactMarkdown escapeHtml={false} source={ReactIntro} />
+      <button type="button">
+        수강하기
+      </button>
     </section>
   );
 }
