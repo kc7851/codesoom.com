@@ -35,7 +35,9 @@ export default function NormalNav() {
             </span>
           */}
           <span className="nav-item">
-            <a className="btn-outline-sm" href="log-in.html">My</a>
+            <Link className="btn-outline-sm" to="/my">
+              My
+            </Link>
           </span>
         </div>
       </div>

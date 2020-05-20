@@ -14,6 +14,7 @@ import Course from './pages/Course';
 import LecturePage from './pages/LecturePage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
+import MyPage from './pages/MyPage';
 import Footer from './components/Footer';
 
 function App() {
@@ -47,6 +48,9 @@ function App() {
                   </Route>
                   <Route path="/terms-conditions">
                     <TermsConditions />
+                  </Route>
+                  <Route path="/my">
+                    <MyPage />
                   </Route>
                   <Route path="/">
                     <Home />
